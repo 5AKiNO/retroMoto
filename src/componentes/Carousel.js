@@ -15,7 +15,7 @@ const UncontrolledExample = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000); // Cambia cada 2 segundos
+    }, 5000); // Cambia cada 2 segundos
 
     return () => clearInterval(interval); // Limpia el intervalo cuando el componente se desmonte
   }, []);
