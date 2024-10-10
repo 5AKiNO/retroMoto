@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './componentes/Navbar';
 import Hero from './componentes/Hero';
 import UncontrolledExample from './componentes/Carousel';
-import Obj from './componentes/obj';
+import Obj from './componentes/Spline';
 import Video from './componentes/ytvideo';
 import Explicacion from './componentes/Explicacion';
 import Fundamentacion from './componentes/Fundamentacion';

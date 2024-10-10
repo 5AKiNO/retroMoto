@@ -5,7 +5,7 @@ const Columna1 = () => {
     <>
       <h1>Objetivo General</h1>
       <p>
-        Desarrollar el prototipo de una cámara de retrovisión para motociclistas utilizando tecnología de impresión 3D.
+        Desarrollar el prototipo de una cámara de retrovisión para motociclistas utilizando la tecnología de impresión 3D para contribuir en una posible idea de negocio de fabricación de dicha cámara en el Paraguay.
       </p>
     </>
   );

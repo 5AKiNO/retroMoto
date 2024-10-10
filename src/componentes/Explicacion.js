@@ -4,7 +4,8 @@ const Explicacion = () => {
   return (
     <>
       <p>
-        Este proyecto se centra en el desarrollo de un dispositivo impreso en 3D que permite a los motociclistas tener una mejor visibilidad de su entorno mediante el uso de una cámara de retrovisión.
+        Es un proyecto que trata sobre el desarrollo de un dispositivo electrónico impreso 3D capaz de ayudar al motociclista a tener una visión más detallada y a disposición en todo momento de lo que respecta su trayectoria.
+        Para llegar a ese objetivo es necesario seguir una secuencia de pasos que llevan al resultado final y completo del prototipo elaborado
       </p>
     </>
   );
