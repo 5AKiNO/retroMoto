@@ -1,29 +1,34 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
-
+function CollapsibleExample() {
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <a href="#home">RetroMoto</a>
-        <button className="hamburger" onClick={toggleNavbar}>
-          &#9776;
-        </button>
-      </div>
-      <ul className={isOpen ? 'open' : ''}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#link">Link</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">1ero LASI</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#proceso">Proceso</Nav.Link>
+            <Nav.Link href="#fundamentos">Fundamentos</Nav.Link>
+            <NavDropdown title="Mas" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="https://github.com/KatheBohnert/Documentacion.git">Documentacion</NavDropdown.Item>
+              <NavDropdown.Item href="#video">
+              Video
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Imagenes</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#obj">
+                Modelo 3D
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-};
+}
 
-export default Navbar;
+export default CollapsibleExample;
