@@ -1,0 +1,35 @@
+.hero {
+  text-align: center;
+  padding: 50px;
+  background-color: #424769;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+}

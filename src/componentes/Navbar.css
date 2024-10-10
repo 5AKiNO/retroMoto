@@ -1,0 +1,32 @@
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul.open {
+  flex-direction: column;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar ul.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
